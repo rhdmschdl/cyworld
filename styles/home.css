@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html, body { 
+    width: 100%;
+    height: 100%;
+}
+/* wrapper의 부모태그는 body, body의 부모태그는 html, 
+html의 부모태그는 iframe이기에 각각 넓이와 길이 설정해주기
+부모태그의 사이즈가 지정이 되어있지 않기 때문에 wrapper만 지정하면 안나타남
+ */
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper__header {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contents__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    color: #55B2D4;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #000;
+    font-size: 8px;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+.divideLine {
+    width: 100%;
+    border-top: 1px solid gray;
+}
+
+.contents__body {
+    color: #999;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.wrapper__body {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+}
+
+.videoBox {
+    width: 100%;
+    height: 240px;
+    background-color:#C4C4C4;
+    margin-top: 13px;
+}
